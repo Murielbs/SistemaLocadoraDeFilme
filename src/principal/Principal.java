@@ -7,22 +7,22 @@ import conta.Conta;
 public class Principal {
     public static void main(String[] args) {
         Filme[] filmes = new Filme[10];
-        filmes[0] = new Filme("Salt", 3.5);
-        filmes[1] = new Filme("Heroes", 3.5);
+        filmes[0] = new Filme("Star Wars", 3.5);
+        filmes[1] = new Filme("Jurassic Park", 3.5);
         filmes[2] = new Filme("X-Men_First_Class", 5.0);
         filmes[3] = new Filme("Matrix", 4.0);
         filmes[4] = new Filme("Avatar", 4.5);
         filmes[5] = new Filme("Titanic", 4.0);
-        filmes[6] = new Filme("Inception", 5.0);
+        filmes[6] = new Filme("O Poderoso Chefão", 5.0);
         filmes[7] = new Filme("Interstellar", 5.5);
         filmes[8] = new Filme("Gladiador", 4.5);
         filmes[9] = new Filme("O Rei Leão", 3.0);
 
         Cliente[] clientes = new Cliente[5];
-        clientes[0] = new Cliente("Danilo Farias", "11111111111");
+        clientes[0] = new Cliente("Danilo Farias", "11111111111"); // nome e cpf
         clientes[1] = new Cliente("Maria Silva", "22222222222");
         clientes[2] = new Cliente("João Souza", "33333333333");
-        clientes[3] = new Cliente("Ana Paula", "44444444444");
+        clientes[3] = new Cliente("Muriel Bezerra", "44444444444");
         clientes[4] = new Cliente("Carlos Lima", "55555555555");
 
         Conta[] contas = new Conta[5];
@@ -56,7 +56,6 @@ public class Principal {
         contas[4].locarFilmes(new Filme[]{filmes[6], filmes[7]});
         contas[4].locarFilmes(new Filme[]{filmes[8], filmes[9], filmes[0]});
 
-        // Imprime extrato de cada cliente
         for (Conta conta : contas) {
             System.out.println(conta.extratoHistorico());
         }
