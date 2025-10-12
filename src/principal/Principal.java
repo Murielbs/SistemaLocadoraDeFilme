@@ -19,11 +19,11 @@ public class Principal {
         filmes[9] = new Filme("O Rei Leão", 3.0);
 
         Cliente[] clientes = new Cliente[5];
-        clientes[0] = new Cliente("Danilo Farias", "11111111111"); // nome e cpf
-        clientes[1] = new Cliente("Maria Silva", "22222222222");
-        clientes[2] = new Cliente("João Souza", "33333333333");
-        clientes[3] = new Cliente("Muriel Bezerra", "44444444444");
-        clientes[4] = new Cliente("Carlos Lima", "55555555555");
+        clientes[0] = new Cliente("Danilo Farias", "1111111111"); // nome e cpf
+        clientes[1] = new Cliente("Maria Silva", "2222222222");
+        clientes[2] = new Cliente("João Souza", "3333333333");
+        clientes[3] = new Cliente("Muriel Bezerra", "4444444444");
+        clientes[4] = new Cliente("Carlos Lima", "5555555555");
 
         Conta[] contas = new Conta[5];
         for (int i = 0; i < clientes.length; i++) {
