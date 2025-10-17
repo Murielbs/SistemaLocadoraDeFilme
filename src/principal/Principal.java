@@ -19,18 +19,18 @@ public class Principal {
         filmes[9] = new Filme("O Rei Leão", 3.0);
 
         Cliente[] clientes = new Cliente[5];
-        clientes[0] = new Cliente("Danilo Farias", "1111111111"); // nome e cpf
-        clientes[1] = new Cliente("Maria Silva", "2222222222");
+        clientes[0] = new Cliente(" João Silva", "1111111111"); // nome e cpf
+        clientes[1] = new Cliente("Muriel Bezerra", "2222222222");
         clientes[2] = new Cliente("João Souza", "3333333333");
-        clientes[3] = new Cliente("Muriel Bezerra", "4444444444");
-        clientes[4] = new Cliente("Carlos Lima", "5555555555");
+        clientes[3] = new Cliente("Maria Santos", "4444444444");
+        clientes[4] = new Cliente("Carlos Silva", "5555555555");
 
         Conta[] contas = new Conta[5];
         for (int i = 0; i < clientes.length; i++) {
             contas[i] = new Conta(clientes[i]);
         }
 
-        // Locação para cada cliente
+        // Locação de fil para cada cliente
         contas[0].locarFilmes(new Filme[]{filmes[0], filmes[1]});
         contas[0].locarFilmes(new Filme[]{filmes[2]});
         contas[0].locarFilmes(new Filme[]{filmes[3], filmes[4], filmes[5]});

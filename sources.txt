@@ -1,5 +1,0 @@
-src/conta/Conta.java
-src/locacao/Locacao.java
-src/principal/Principal.java
-src/model/Filme.java
-src/model/Cliente.java
